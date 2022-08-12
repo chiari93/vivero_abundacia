@@ -14,46 +14,34 @@
 <body>
     <header class="menu">
         <!--INICIO MENU NAVEGACION-->
-        <nav>
-            <div class="menu_logo">
-                <img src="imagenes/logo.jpg" alt="Vivero Abundancia" title="Vivero Abundancia" />
-            </div>
-            <div class="menu_navegacion">
-                <ul>
-                    <li>
-                        <a href="index.html">INICIO</a>
-                    </li>
-                    <li class="menu_productos">
-                        <a href="productos.html">PRODUCTOS</a>
-                    </li>
-                        <ul class="desplegable">
-                            <li>
-                                <a href="plantas_de_interior.html">PLANTAS DE INTERIOR</a>
-                            </li>
-                            <li>
-                                <a href="plantas_de_exterior.html">PLANTAS DE EXTERIOR</a>
-                            </li>
-                            <li>
-                                <a href="macetas_y_sustratos.html">MACETAS Y SUSTRATOS</a>
-                            </li>
-                        </ul>
-                    <li>
-                        <a href="tips_y_cuidados.html">TIPS Y CUIDADOS</a>
-                    </li>
-                    <li>
-                        <a href="talleres.html">TALLERES</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html">CONTACTO</a>
-                    </li>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                    <img src="imagenes/logo.jpg" alt="Vivero Abundancia" width="200">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      PRODUCTOS
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="plantas_de_interior.html">PLANTAS DE INTERIOR</a></li>
+                    </ul>
+                  </li>
                 </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+              <div>
+                <button type="button" class="btn btn-link">0 ITEMS</button>
+              </div>
             </div>
-            <div class="menu_carrito">
-                <a href="#">0 items</a> <!--CARRITO DE COMPRAS-->
-            </div>
-        </nav>
+          </nav>
     <!--FIN MENU NAVEGACION-->
-            <!--Me falta agregar un buscador-->
 </header>
 <main>
     <h1>Productos</h1>
