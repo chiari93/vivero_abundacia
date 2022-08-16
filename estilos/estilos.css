@@ -1,0 +1,11 @@
+* {
+    margin: 0; padding: 0;
+}
+.redes a:hover {
+    color: green;
+    font-size: 24px;
+}
+.banner {
+    animation: bounceInLeft;
+    animation-duration: 2s;
+}
