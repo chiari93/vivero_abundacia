@@ -58,25 +58,46 @@
     <!--FIN MENU NAVEGACION-->
 </header>
 <main>
-    <h1>Productos</h1>
-    <section class="seccion-productos">
-        <div>
-                <img src="imagenes/Plantas_de_interior.jpg" alt="plantas_de_interior">
-                <a href="Plantas_de_interior.html">Plantas de Interior</a>
+    <section class="talleres">
+        <div class="talleres_ intro">
+            <h1>Nuestros talleres</h1>
+            <p >Contamos con 2 talleres gratuitos! Luego de inscribirte te llegará el link al taller por email.</p>
         </div>
         <div>
-                <img src="imagenes/Plantas_de_exterior.jpg" alt="plantas_de_exterior">
-                <a href="Plantas_de_exterior.html">Plantas de exterior</a>
+            <div class="talleres_manejo">  
+                <h2>Manejo de plagas</h2> 
+                <!--imagen-->
+                <p>En este taller aprenderás sobre las principales plagas que pueden afectar a nuetsros cultivos, y las mejores formas para tratarlas.</p>
+            </div> 
+            <div class="talleres_germinacion">
+                <h2>Germinación y propagación</h2> 
+                <!--imagen-->
+                <p>En este taller aprenderás las técnicas de germinación para cada tipo de semilla. Además hablaremos un poco acerca de la propagación de plantas, cómo se realiza y en qué tipo de plantas.</p>
         </div>
-        <div>
-                <img src="imagenes/Macetas_y_sustratos.jpg" alt="macetas_y_sustratos">
-                <a href="Macetas_y_sustratos">Macetas y sustratos</a>
-
-        </div>
+    </section>
+    <section class="inscripcion">
+        <h2>Inscribite!</h2>
+        <form>
+            <label>
+                Nombre y Apellido
+                <input type="text"/>
+            </label>
+            <label>
+                Teléfono
+                <input type="text"/>
+            </label>
+            <label>
+                Email
+                <input type="email"/>
+            </label>
+            <input type="checkbox"/><span>Taller control de plagas</span>
+            <input type="checkbox"/><span>Taller germinación y propagación</span>
+            <input type="submit" value="Inscribirse"/>
+        </form>
     </section>
 </main>
 <!--INICIO FOOTER-->
-<footer>
+<footer class="bg-success text-light">
     <div class="footer_contacto">
         <p>CONTACTANOS</p>
         <ul>
@@ -95,13 +116,20 @@
         <small>Copyright Vivero Abundancia</small>
     </div>
     <div class="footer_newsletter">
-        <form>
-            <label>Newsletter</label>
-            <input type="email" placeholder="email"/>
-            <input type="submit" value="Subscribirse"/>
+        <form class="row gx-3 gy-2 align-items-center">
+            <div class="col-sm-3">
+              <label class="visually-hidden" for="specificSizeInputName">Email</label>
+              <input type="text" class="form-control" id="specificSizeInputName" placeholder="Newsletter">
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-light">Submit</button>
+              </div>
+            </form>
         </form>
     </div>
 </footer>
 <!--FIN FOOTER-->
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
