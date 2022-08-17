@@ -9,3 +9,109 @@
     animation: bounceInLeft;
     animation-duration: 2s;
 }
+h1 {
+    color: #578963;
+    font-family: 'Ibarra Real Nova', serif;
+    font-weight: 600;
+    font-size: 40px;
+    font-style: italic;   
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+/**INICIO PRODUCTOS**/
+.productos{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    grid-row-gap: 20px;  
+}
+.productos div{
+    display: grid;
+    grid-template-rows: 1fr;  
+    justify-self: center;
+    align-self: end;
+    grid-row-gap: 20px;
+
+}
+button{
+    height: 40px;
+}
+@media (min-width: 600px){
+    .productos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-content: center;  
+}}
+@media (min-width: 1100px){
+    .productos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        align-content: center;  
+}}
+/**FIN PRODCUTOS**/
+/**INICIO REDES**/
+h2{
+    font-family: 'Ibarra Real Nova', serif;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+}
+.redes div {
+    display: flex;
+    justify-content: center;
+}
+.redes a{
+    padding: 15px;
+}
+/**FIN REDES**/
+/**INICIO FOOTER**/
+footer {
+    padding: 20px;
+    background-color: #578963;
+    font-family: 'Ibarra Real Nova', serif;
+    color: white;
+    font-size: 16px;
+}
+footer div ul {
+    list-style: none;
+    padding: none;
+}
+.contactanos ul{
+ padding:0;
+}
+.copyright{
+    text-align: center;
+}
+/**FIN FOOTER**/
+/**SECCION TALLERES**/
+.talleres{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.talleres_intro p{
+ margin-left: 15px
+}
+.talleres div{
+    margin: 15px;
+    background-color: #a5c7ad ;
+}
+.talleres p{
+    margin-left: 15px
+}
+/**SECCION TALLERES**/
+/**SECCION TIPS**/
+.tips p{
+    margin: 15px;
+}
+h3{
+    font-family: 'Ibarra Real Nova', serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin: 15px; 
+}
+/**SECCION TIPS**/

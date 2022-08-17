@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="viewport" content="width=device-width", initial-scale="1-0">
+    <meta name="viewport" content="width=device-width", initial-scale="1-0">
    <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="estilos/estilos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +21,7 @@
 <body>
     <header class="menu">
         <!--INICIO MENU NAVEGACION-->
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-#fff">
             <div class="container-fluid">
                     <img src="imagenes/logo.jpg" alt="Vivero Abundancia" width="200">
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -58,12 +62,11 @@
     <!--FIN MENU NAVEGACION-->
 </header>
 <main>
+  <div class="talleres_intro">
+    <h1>Nuestros talleres</h1>
+    <p>Contamos con 2 talleres gratuitos! Luego de inscribirte te llegará el link al taller por email.</p>
+  </div>
     <section class="talleres">
-        <div class="talleres_ intro">
-            <h1>Nuestros talleres</h1>
-            <p >Contamos con 2 talleres gratuitos! Luego de inscribirte te llegará el link al taller por email.</p>
-        </div>
-        <div>
             <div class="talleres_manejo">  
                 <h2>Manejo de plagas</h2> 
                 <!--imagen-->
@@ -76,29 +79,33 @@
         </div>
     </section>
     <section class="inscripcion">
-        <h2>Inscribite!</h2>
-        <form>
-            <label>
-                Nombre y Apellido
-                <input type="text"/>
-            </label>
-            <label>
-                Teléfono
-                <input type="text"/>
-            </label>
-            <label>
-                Email
-                <input type="email"/>
-            </label>
-            <input type="checkbox"/><span>Taller control de plagas</span>
-            <input type="checkbox"/><span>Taller germinación y propagación</span>
-            <input type="submit" value="Inscribirse"/>
-        </form>
+      <h2>Inscribite!</h2>
+      <form>
+        <div class="mb-3">
+          <div class="row">
+          <label for="InputEmail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="InputName" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="InputName">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Taller control de plagas</label>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Taller germinación y propagación</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </section>
 </main>
 <!--INICIO FOOTER-->
-<footer class="bg-success text-light">
-    <div class="footer_contacto">
+<footer>
+  <div class="row">
+    <div class="col align-self-start contactanos">
         <p>CONTACTANOS</p>
         <ul>
             <li>
@@ -112,21 +119,17 @@
             </li>
         </ul>
     </div>
-    <div class="footer_copyright">
+    <div class="col align-self-end copyright">
         <small>Copyright Vivero Abundancia</small>
     </div>
-    <div class="footer_newsletter">
-        <form class="row gx-3 gy-2 align-items-center">
-            <div class="col-sm-3">
-              <label class="visually-hidden" for="specificSizeInputName">Email</label>
-              <input type="text" class="form-control" id="specificSizeInputName" placeholder="Newsletter">
-            </div>
-            <div class="col-12">
-                <button type="submit" class="btn btn-light">Submit</button>
-              </div>
-            </form>
-        </form>
+    <div class="col">
+      <form>
+        <label>Newsletter</label>
+        <input type="email" placeholder="email"/>
+        <input type="submit" value="Subscribirse"/>
+      </form>
     </div>
+  </div>
 </footer>
 <!--FIN FOOTER-->
 <!-- JavaScript Bundle with Popper -->
