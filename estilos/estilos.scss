@@ -1,0 +1,138 @@
+* {
+    margin: 0; padding: 0;
+}
+$color-verde: #578963;
+.banner {
+    animation: bounceInLeft;
+    animation-duration: 2s;
+}
+h1 {
+    color: $color-verde;
+    font-family: 'Ibarra Real Nova', serif;
+    font-weight: 600;
+    font-size: 40px;
+    font-style: italic;   
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+/**INICIO PRODUCTOS-INDEX**/
+.productos{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    grid-row-gap: 20px;  
+    div{
+        display: grid;
+        grid-template-rows: 1fr;  
+        justify-self: center;
+        align-self: end;
+        grid-row-gap: 20px;
+    }
+}
+button{
+    height: 40px;
+}
+@media (min-width: 600px){
+    .productos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-content: center;  
+}}
+@media (min-width: 1100px){
+    .productos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        align-content: center;  
+}}
+/**FIN PRODCUTOS-INDEX**/
+/**INICIO REDES**/
+.redes {
+    a{
+        padding: 15px;
+    }
+    a:hover {
+    color: $color-verde;
+    font-size: 24px;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+}}
+/**FIN REDES**/
+/**INICIO FOOTER**/
+footer {
+    padding: 20px;
+    background-color: $color-verde;
+    font-family: 'Ibarra Real Nova', serif;
+    color: white;
+    font-size: 16px;
+    div {
+        ul {
+        list-style: none;
+        padding: none;
+    }}
+}
+.contactanos {
+    ul{
+    padding:0;
+   }}
+   .copyright{
+    text-align: center;
+}
+/**FIN FOOTER**/
+/** INICIO SECCION TALLERES**/
+.talleres_intro p{
+    margin-left: 15px
+   }
+.talleres {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    div{
+        margin: 15px;
+        background-color: #a5c7ad ;
+    }
+    p{
+        margin-left: 15px
+    }
+}
+/**FIN SECCION TALLERES**/
+/**INICIO SECCION TIPS**/
+.tips p{
+    margin: 15px;
+}
+h3{
+    font-family: 'Ibarra Real Nova', serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin: 15px; 
+}
+/**FIN SECCION TIPS**/
+/**INICIO SECCION PRODUCTOS**/
+.h2productos {
+    text-align: start;
+    padding-bottom: 20px;
+}
+.productos_productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 15px;
+    grid-column-gap: 20px;
+    div{
+        display: grid;
+        grid-template-rows: 1fr;  
+        justify-self: center;
+        align-self: end;
+        grid-row-gap: 20px;
+    }
+}
+.productos_productos_1{
+    align-self: end;
+}
+.productos_productos_2{
+    align-self: start;
+}
+/**FIN SECCION PRODUCTOS**/
