@@ -10,7 +10,7 @@ h1 {
     color: $color-verde;
     font-family: 'Ibarra Real Nova', serif;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 50px;
     font-style: italic;   
     margin-top: 20px;
     margin-bottom: 20px;
@@ -31,8 +31,14 @@ h1 {
         grid-row-gap: 20px;
     }
 }
-button{
+@mixin boton-carrito {
+    background-color: black;
+    color: white;
     height: 40px;
+}
+
+.btn-carrito {
+    @include boton-carrito;
 }
 @media (min-width: 600px){
     .productos{
@@ -86,7 +92,8 @@ footer {
 /**FIN FOOTER**/
 /** INICIO SECCION TALLERES**/
 .talleres_intro p{
-    margin-left: 15px
+    margin-left: 15px;
+    font-size: 20px
    }
 .talleres {
     display:grid;
@@ -96,8 +103,12 @@ footer {
         background-color: #a5c7ad ;
     }
     p{
-        margin-left: 15px
+        margin-left: 15px;
+        font-size: 17px;
     }
+}
+h2{
+    margin: 15px;  
 }
 /**FIN SECCION TALLERES**/
 /**INICIO SECCION TIPS**/
@@ -136,3 +147,16 @@ h3{
     align-self: start;
 }
 /**FIN SECCION PRODUCTOS**/
+/**INICIO SECCION CONTACTOS**/
+.texto-contacto{
+    margin:20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.formulario{
+    display: flex;
+    align-content: center;
+    margin:20px;
+}
+
+/**FIN SECCION CONTACTOS**/
