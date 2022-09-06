@@ -88,27 +88,59 @@ footer {
 
 .talleres {
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 200px;
+  margin-left: 100px;
+  margin-right: 100px; }
   .talleres div {
-    margin: 15px;
-    background-color: #a5c7ad; }
+    margin: 15px; }
   .talleres p {
     margin-left: 15px;
     font-size: 17px; }
+  .talleres img {
+    align-self: center;
+    padding-bottom: 20px;
+    width: 100%; }
 
 h2 {
-  margin: 15px; }
+  margin: 15px;
+  text-align: center; }
+
+.formulario {
+  display: flex;
+  justify-content: center; }
 
 /**FIN SECCION TALLERES**/
 /**INICIO SECCION TIPS**/
-.tips p {
-  margin: 15px; }
-
-h3 {
-  font-family: 'Ibarra Real Nova', serif;
-  font-weight: 500;
-  font-size: 30px;
-  margin: 15px; }
+.tips {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "uno dos dos ." ". tres tres cuatro " ". cinco cinco ." ". seis seis ."; }
+  .tips .uno {
+    grid-area: uno; }
+  .tips .dos {
+    grid-area: dos;
+    align-self: center; }
+  .tips .tres {
+    grid-area: tres;
+    align-self: center; }
+  .tips .cuatro {
+    grid-area: cuatro;
+    justify-self: end; }
+  .tips .cinco {
+    grid-area: cinco; }
+  .tips .seis {
+    grid-area: seis; }
+  .tips p {
+    margin: 15px; }
+  .tips h3 {
+    font-family: 'Ibarra Real Nova', serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin: 15px;
+    text-align: center; }
+  .tips img {
+    height: 400px; }
 
 /**FIN SECCION TIPS**/
 /**INICIO SECCION PRODUCTOS**/
@@ -144,6 +176,8 @@ h3 {
 .formulario {
   display: flex;
   align-content: center;
-  margin: 20px; }
+  margin: 20px;
+  margin-top: 90px;
+  margin-bottom: 90px; }
 
 /**FIN SECCION CONTACTOS**/
