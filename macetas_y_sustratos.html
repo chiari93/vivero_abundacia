@@ -22,59 +22,83 @@
 </head>
 <body>
     <header class="menu">
-        <!--INICIO MENU NAVEGACION-->
-        <nav class="navbar navbar-expand-lg bg-#fff">
-            <div class="container-fluid">
-                    <img src="imagenes/logo.jpg" alt="Vivero Abundancia" title="logo vivero abundancia" width="200">
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      PRODUCTOS
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="plantas_de_interior.html">PLANTAS DE INTERIOR</a></li>
-                      <li><a class="dropdown-item" href="plantas_de_exterior.html">PLANTAS DE EXTERIOR</a></li>
-                      <li><a class="dropdown-item" href="macetas_y_sustratos.html">MACETAS Y SUSTRATOS</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="talleres.html">TALLERES</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="tips_y_cuidados.html">TIPS Y CUIDADOS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="contacto.html">CONTACTO</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-              <div>
-                <button type="button" class="btn btn-link">0 ITEMS</button>
-              </div>
-            </div>
-          </nav>
-    <!--FIN MENU NAVEGACION-->
+                <!--INICIO MENU NAVEGACION-->
+                <nav class="navbar" style="background-color: #fff" fixed-top>
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="imagenes/logo.jpg" width="200"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                      <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                          </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                PRODUCTOS
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="plantas_de_interior.html">PLANTAS DE INTERIOR</a></li>
+                                <li><a class="dropdown-item" href="plantas_de_exterior.html">PLANTAS DE EXTERIOR</a></li>
+                                <li><a class="dropdown-item" href="macetas_y_sustratos.html">MACETAS Y SUSTRATOS</a></li>
+                              </ul>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="talleres.html">TALLERES</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="tips_y_cuidados.html">TIPS Y CUIDADOS</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">CONTACTO</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+            <!--FIN MENU NAVEGACION-->
 </header>
 <main>
 		<h1>Productos</h1>
 		<h2 class="h2productos">Macetas y sustratos</h2>
-    <section class="productos_productos">
-      <div class="productos_productos_1">
+    <section class="productos">
+      <div>
         <img src="imagenes/producto5.jpg" alt="Producto5" title="producto5">
         <button class="btn btn-dark">AGREGAR AL CARRITO</button>
       </div>
-      <div class="productos_productos_2">
+      <div>
         <img src="imagenes/producto8.jpg" alt="Producto8" title="producto8">
         <button class="btn btn-dark">AGREGAR AL CARRITO</button>
       </div> 
+      <div>
+        <img src="imagenes/producto12.jpg" alt="Producto12" title="producto12">
+        <button class="btn btn-dark">AGREGAR AL CARRITO</button>
+      </div> 
+      <div>
+        <img src="imagenes/producto6.jpg" alt="Producto6" title="producto6">
+        <button class="btn btn-dark">AGREGAR AL CARRITO</button>
+      </div> 
+      <div>
+        <img src="imagenes/producto9.jpg" alt="Producto9" title="producto9">
+        <button class="btn btn-dark">AGREGAR AL CARRITO</button>
+      </div> 
+      <div>
+        <img src="imagenes/producto10.jpg" alt="Producto10" title="producto10">
+        <button class="btn btn-dark">AGREGAR AL CARRITO</button>
+      </div> 
+      <div>
+        <img src="imagenes/producto1.jpg" alt="Producto1" title="producto1">
+        <button class="btn btn-dark">AGREGAR AL CARRITO</button>
+      </div>
     </section>
 </main>
 <!--INICIO FOOTER-->

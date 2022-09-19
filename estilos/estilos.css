@@ -22,7 +22,9 @@ h1 {
   grid-template-columns: 1fr;
   justify-content: center;
   align-content: center;
-  grid-row-gap: 20px; }
+  grid-row-gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px; }
   .productos div {
     display: grid;
     grid-template-rows: 1fr;
@@ -34,20 +36,6 @@ h1 {
   background-color: black;
   color: white;
   height: 40px; }
-
-@media (min-width: 600px) {
-  .productos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-content: center; } }
-
-@media (min-width: 1100px) {
-  .productos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: center;
-    align-content: center; } }
 
 /**FIN PRODCUTOS-INDEX**/
 /**INICIO REDES**/
@@ -88,7 +76,7 @@ footer {
 
 .talleres {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-column-gap: 200px;
   margin-left: 100px;
   margin-right: 100px; }
@@ -148,24 +136,6 @@ h2 {
   text-align: start;
   padding-bottom: 20px; }
 
-.productos_productos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 15px;
-  grid-column-gap: 20px; }
-  .productos_productos div {
-    display: grid;
-    grid-template-rows: 1fr;
-    justify-self: center;
-    align-self: end;
-    grid-row-gap: 20px; }
-
-.productos_productos_1 {
-  align-self: end; }
-
-.productos_productos_2 {
-  align-self: start; }
-
 /**FIN SECCION PRODUCTOS**/
 /**INICIO SECCION CONTACTOS**/
 .texto-contacto {
@@ -181,3 +151,19 @@ h2 {
   margin-bottom: 90px; }
 
 /**FIN SECCION CONTACTOS**/
+@media (min-width: 600px) {
+  .productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center; }
+  .talleres {
+    display: grid;
+    grid-template-columns: 1fr 1fr; } }
+
+@media (min-width: 1100px) {
+  .productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center; } }
