@@ -102,8 +102,8 @@ h2 {
 /**INICIO SECCION TIPS**/
 .tips {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "uno dos dos ." ". tres tres cuatro " ". cinco cinco ." ". seis seis ."; }
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "uno dos" "tres cuatro " "cinco cinco" "seis seis"; }
   .tips .uno {
     grid-area: uno; }
   .tips .dos {
@@ -120,7 +120,8 @@ h2 {
   .tips .seis {
     grid-area: seis; }
   .tips p {
-    margin: 15px; }
+    margin: 15px;
+    margin-bottom: 30px; }
   .tips h3 {
     font-family: 'Ibarra Real Nova', serif;
     font-weight: 500;
@@ -159,11 +160,53 @@ h2 {
     align-content: center; }
   .talleres {
     display: grid;
-    grid-template-columns: 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr; }
+  .tips {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "uno dos dos ." ". tres tres cuatro " ". cinco cinco ." ". seis seis ."; }
+    .tips .uno {
+      grid-area: uno; }
+    .tips .dos {
+      grid-area: dos;
+      align-self: center; }
+    .tips .tres {
+      grid-area: tres;
+      align-self: center; }
+    .tips .cuatro {
+      grid-area: cuatro;
+      justify-self: end; }
+    .tips .cinco {
+      grid-area: cinco; }
+    .tips .seis {
+      grid-area: seis; }
+    .tips p {
+      margin: 15px; } }
 
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
   .productos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
-    align-content: center; } }
+    align-content: center; }
+  .tips {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "uno dos dos ." ". tres tres cuatro " ". cinco cinco ." ". seis seis ."; }
+    .tips .uno {
+      grid-area: uno; }
+    .tips .dos {
+      grid-area: dos;
+      align-self: center; }
+    .tips .tres {
+      grid-area: tres;
+      align-self: center; }
+    .tips .cuatro {
+      grid-area: cuatro;
+      justify-self: end; }
+    .tips .cinco {
+      grid-area: cinco; }
+    .tips .seis {
+      grid-area: seis; }
+    .tips p {
+      margin: 15px; } }
